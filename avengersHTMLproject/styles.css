@@ -1,0 +1,62 @@
+*{padding: 0;
+margin: 0;
+font-family: Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+    background: cornflowerblue;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul .dropdown li{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: cornflowerblue;
+    position: absolute;
+    display: none;
+}
+ul li a:hover{
+    background: #5077bd;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+.galary img{
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: #4a80e6;
+    font-family: fantasy, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400px;
+}
+h3{
+    color: #4a80e6;
+    font-family: fantasy, sans-serif;
+    text-align: left;
+    font-size: 30px;
+}
+p{
+    color: black;
+    font-family: Helvetica, sans-serif, sans-serif;
+    text-align: justify;
+    
+}
