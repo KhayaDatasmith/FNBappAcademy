@@ -1,0 +1,56 @@
+URL:
+https://mysite.itvarsity.org/api/ContactBook/
+
+API Methods:
+	1. get-contacts
+	2. add-contacts
+	3. edit-contacts
+	4. delete-contacts
+
+Get contacts
+	Has 2 optional parameters.
+		-none: Returns all Db entries.
+		-contact id: returns a specific Db entry.
+
+Db entries return as a JSON array.
+	
+i.e.
+[
+	{
+	 "id":"3",
+	 "firstname":"Tony",
+	 "lastname":"Stark",
+	 "mobile":"00665551234",
+	 "email":"edith@stark.com",
+	 "avatar":"5e04725a7cb75".png, 
+	},
+	{
+	 "id":"4",
+	 "firstname":"Black",
+	 "lastname":"Widow",
+	 "mobile":"00885556789",
+	 "email":"natasha.romanov@avengers.org",
+	 "avatar":"5e0472ab23ac5".png, 
+	}
+]
+
+
+Add Contact
+	parameter: FormData object
+	returns:
+		-text:"1" if successful, or
+		-if failed, it returns an error message.
+
+Edit contact
+	Parameter: FormData object with an ID, (because the Db needs to know exactly which contact you are editing)
+			returns:
+		-text:"1" if successful, or
+		-if failed, it returns an error message.
+
+Delete Contact
+	Parameter: FormData object with an ID, (same reason as "edit-contact".)
+		returns:
+		-text:"1" if successful, or
+		-if failed, it returns an error message.
+
+
